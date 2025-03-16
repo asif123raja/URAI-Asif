@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const token = "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"; // Replace with your actual token
+  const token = process.env.HUGGINGFACE_API_KEY; // Replace with your actual token
 
   try {
     const response = await fetch(
