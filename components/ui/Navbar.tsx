@@ -72,7 +72,7 @@ export default function Navbar() {
           </Link>
         ) : (
           <Button onClick={() => setIsLoggedIn(true)} variant="outline" className=" text-blue-900 border-white">
-            <LogIn className="w-5 h-5 mr-2" /> Sign In
+            {/* <LogIn className="w-5 h-5 mr-2" /> Sign In */}
           </Button>
         )}
       </div>
