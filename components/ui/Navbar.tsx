@@ -71,7 +71,7 @@ export default function Navbar() {
             <UserCircle className="w-6 h-6" /> Profile
           </Link>
         ) : (
-          <Button onClick={() => setIsLoggedIn(true)} variant="outline" className=" text-blue-900 border-white">
+          <Button onClick={() => setIsLoggedIn(true)} variant="outline" className=" ">
             {/* <LogIn className="w-5 h-5 mr-2" /> Sign In */}
           </Button>
         )}
