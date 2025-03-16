@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         {/* App Info */}
         <div className="text-center md:text-left">
           <span className="text-white text-3xl font-bold">
-            <span className="text-blue-500">Genie</span>
+            <span className="text-blue-500">UR</span>
             <span className="text-gray-400">AI</span>
           </span>
           <p className="text-sm mt-2">Your ultimate AI-powered assistant for all your needs.</p>
