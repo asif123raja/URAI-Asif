@@ -9,10 +9,7 @@ export default function ChatComponent() {
     const [chat, setChat] = useState<{ sender: "user" | "AI"; text: string; image?: string }[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
 
-    const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const file = event.target.files?.[0] || null;
-        setImage(file);
-    };
+    
 
     const sendMessage = async () => {
         if (!message.trim() && !image) return;
