@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import { UserCircle, Bot, Image, Video, Menu } from "lucide-react";
+import {  Bot, Image, Video, Menu } from "lucide-react";
 import { FaFileAlt, FaRegImage } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Navbar() {
