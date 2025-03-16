@@ -44,16 +44,19 @@ export default function AIToolsPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center p-6">
       <h2 className="text-4xl font-bold text-center mb-8">AI Tools Dashboard</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl min-h-80">
         {tools.map((tool) => (
           <motion.div key={tool.name} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Card className="bg-gray-800 p-6 shadow-lg rounded-lg border border-gray-700">
-              <CardContent className="flex flex-col items-center">
+            {/* Added `h-full flex flex-col` to ensure equal height */}
+            <Card className="bg-gray-800 p-6 shadow-lg rounded-lg border border-gray-700 h-full flex flex-col">
+              {/* Added `flex-grow` to stretch content */}
+              <CardContent className="flex flex-col items-center flex-grow">
                 {tool.icon}
                 <CardTitle className="mt-4 text-xl">{tool.name}</CardTitle>
                 <p className="text-sm text-gray-400 text-center mt-2">{tool.description}</p>
-                <Link href={tool.link}>
-                  <Button className="mt-4 bg-blue-600 hover:bg-blue-700 w-full">Open {tool.name}</Button>
+                {/* Added `mt-auto` to keep button at the bottom */}
+                <Link href={tool.link} className="w-full pt-4 ">
+                  <Button className="mt-auto bg-blue-600 hover:bg-blue-700 w-full"> {tool.name}</Button>
                 </Link>
               </CardContent>
             </Card>
