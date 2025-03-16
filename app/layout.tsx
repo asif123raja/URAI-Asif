@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Solo Leveling App',
-  description: 'Track your fitness challenges, earn points, and level up!',
+  title: 'UR AI',
+  description: 'ALL AI FEATURES IN ONE PLATFORM',
 };
 
 export default function RootLayout({
