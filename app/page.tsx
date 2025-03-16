@@ -55,8 +55,8 @@ export default function AIToolsPage() {
                 <CardTitle className="mt-4 text-xl">{tool.name}</CardTitle>
                 <p className="text-sm text-gray-400 text-center mt-2">{tool.description}</p>
                 {/* Added `mt-auto` to keep button at the bottom */}
-                <Link href={tool.link} className="w-full pt-4 ">
-                  <Button className="mt-auto bg-blue-600 hover:bg-blue-700 w-full"> {tool.name}</Button>
+                <Link href={tool.link}>
+                  <Button className=" mt-4 bg-blue-600 hover:bg-blue-700 w-full">Open {tool.name}</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -66,3 +66,4 @@ export default function AIToolsPage() {
     </div>
   );
 }
+
