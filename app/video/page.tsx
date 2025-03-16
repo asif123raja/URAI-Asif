@@ -122,11 +122,11 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
 
   const examplePrompts = [
-    "A cinematic drone shot over a futuristic city at sunset, with flying cars and neon lights illuminating the skyline.",
-    "A breathtaking underwater scene featuring colorful coral reefs, exotic fish, and a majestic sea turtle swimming gracefully.",
-    "A medieval battle scene with knights in shining armor clashing swords on a foggy battlefield, fire and smoke in the background.",
-    "A serene landscape of the Northern Lights dancing over a snowy mountain range, reflecting off a frozen lake.",
-    "A thrilling car chase through a cyberpunk-inspired metropolis, with neon billboards and rain-slicked streets reflecting city lights."
+    "A cinematic drone shot over a futuristic city at sunset, with flying cars and neon lights illuminating the skyline, make it realitic.",
+    "A breathtaking underwater scene featuring colorful coral reefs, exotic fish, and a majestic sea turtle swimming gracefully, make it realitic.",
+    "A medieval battle scene with knights in shining armor clashing swords on a foggy battlefield, fire and smoke in the background, make it realitic.",
+    "A serene landscape of the Northern Lights dancing over a snowy mountain range, reflecting off a frozen lake, make it realitic.",
+    "A thrilling car chase through a cyberpunk-inspired metropolis, with neon billboards and rain-slicked streets reflecting city lights, make it realitic."
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
