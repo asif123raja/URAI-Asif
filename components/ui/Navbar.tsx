@@ -28,7 +28,7 @@ export default function Navbar() {
         <Link href="/image" className="flex items-center gap-2 hover:text-yellow-400">
           <Image className="w-5 h-5" /> Image Gen
         </Link>
-        <Link href="/chatbot" className="flex items-center gap-2 hover:text-blue-400">
+        <Link href="/imgdec" className="flex items-center gap-2 hover:text-blue-400">
           <FaRegImage className="w-5 h-5" /> Image Description
         </Link>
         <Link href="/video" className="flex items-center gap-2 hover:text-purple-400">
@@ -57,7 +57,7 @@ export default function Navbar() {
             <Link href="/video" className="flex items-center gap-2 hover:text-purple-400">
               <Video className="w-5 h-5" /> Video Gen
             </Link>
-            <Link href="/image-description" className="flex items-center gap-2 hover:text-blue-400">
+            <Link href="/imgdec" className="flex items-center gap-2 hover:text-blue-400">
               <FaRegImage className="w-5 h-5" /> Image Description
             </Link>
           </div>

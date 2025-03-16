@@ -68,19 +68,19 @@ export default function ChatComponent() {
                 </div>
                 
                 <div className="flex flex-col space-y-2 mt-4">
-                    <input
+                    {/* <input
                         type="text"
                         className="flex-1 p-2 text-black rounded-lg"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         placeholder="Type a message..."
-                    />
+                    /> */}
                     
                     {/* Custom File Upload Button */}
-                    {/* <label className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-center">
+                    <label className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-center">
                         Choose Image File
                         <input type="file" accept="image/*" onChange={handleImageUpload} className="hidden" />
-                    </label> */}
+                    </label>
 
                     <button onClick={sendMessage} className="p-2 bg-green-500 hover:bg-green-600 rounded-lg">
                         {loading ? "Sending..." : "Send"}

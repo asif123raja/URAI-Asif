@@ -29,7 +29,7 @@ const tools = [
     name: "Image Description",
     icon: <FaRegImage className="w-10 h-10 text-purple-400" />,
     description: "Get a detailed description of an uploaded image.",
-    link: "/chatbot",
+    link: "/imgdec",
   },
   {
     name: "Video Generator",
