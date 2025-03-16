@@ -122,11 +122,11 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
 
   const examplePrompts = [
-    "A cinematic drone shot over a futuristic city at sunset, with flying cars and neon lights illuminating the skyline, make it realitic.",
-    "A breathtaking underwater scene featuring colorful coral reefs, exotic fish, and a majestic sea turtle swimming gracefully, make it realitic.",
-    "A medieval battle scene with knights in shining armor clashing swords on a foggy battlefield, fire and smoke in the background, make it realitic.",
-    "A serene landscape of the Northern Lights dancing over a snowy mountain range, reflecting off a frozen lake, make it realitic.",
-    "A thrilling car chase through a cyberpunk-inspired metropolis, with neon billboards and rain-slicked streets reflecting city lights, make it realitic."
+    "A hyper-realistic drone shot of a futuristic Tokyo at midnight, illuminated by neon holographic billboards reflecting off wet streets. Flying cars navigate between towering skyscrapers, their headlights casting beams through a light fog. Pedestrians in futuristic attire walk along bustling streets filled with street vendors selling steaming ramen, high-tech gadgets, and glowing accessories. The skyline features digital advertisements with animated figures, and cherry blossom trees with glowing petals line the sidewalks. A soft rain drizzles, creating a cinematic wet pavement effect.",
+    "A highly detailed underwater shot of a deep-sea exploration submersible slowly approaching a colossal sunken shipwreck. The rusted remains of the vessel are covered in coral and glowing bioluminescent organisms, while schools of exotic fish swim around the decayed structure. A giant manta ray glides gracefully above the wreck, and distant shadows of sharks can be seen moving through the deep blue abyss. The submersible's bright lights reveal intricate carvings on the ship’s bow, while a robotic arm collects samples from the ocean floor, stirring up a cloud of golden sand.",
+    "A highly detailed cinematic battle scene set in a medieval battlefield during a thunderstorm. Thousands of armored knights charge across a muddy field, their swords clashing as rain pours down. Lightning illuminates the sky, casting eerie shadows over the battlefield. Soldiers on horseback trample through pools of water, while catapults hurl flaming projectiles toward distant stone walls. The camera focuses on a single warrior in intricately detailed battle-worn armor, his sword gleaming with rainwater as he leads his army through the chaos. The ground shakes with the sound of clashing steel and distant war cries, making the scene feel intensely immersive.",
+    "A serene landscape of the Northern Lights dancing over a snowy mountain range, reflecting off a frozen lake, make it realistic.",
+    "A thrilling car chase through a cyberpunk-inspired metropolis, with neon billboards and rain-slicked streets reflecting city lights, make it realistic."
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
